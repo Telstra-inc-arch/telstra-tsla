@@ -1,0 +1,136 @@
+# Security Policy
+
+The Telstra‑tsla team takes the security of our users, customers, and ecosystem seriously. We appreciate coordinated disclosure of vulnerabilities and strive to resolve confirmed issues quickly and transparently.
+
+---
+
+## Supported Versions
+
+Use this section to tell people about which versions of your project are
+currently being supported with security updates.
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 5.1.x   | :white_check_mark: |
+| 5.0.x   | :x:                |
+| 4.0.x   | :white_check_mark: |
+| < 4.0   | :x:                |
+
+**Notes**
+- Only the branches listed above receive security fixes.
+- End‑of‑life (EOL) branches are not patched; please upgrade to a supported line.
+
+---
+
+## Reporting a Vulnerability
+
+We encourage responsible disclosure and request that you **do not** publicly disclose a vulnerability before we’ve had a chance to investigate and release a fix.
+
+### How to report
+- **GitHub Security Advisory (preferred):**
+  1. Open the target repository.
+  2. Go to **Security → Report a vulnerability** and submit a private advisory.
+- **Email (alternative):** `security@telstra-tsla.example`  
+  - Optional PGP key: `https://telstra-tsla.example/pgp.txt` (key ID: `AAAA BBBB CCCC DDDD`, fingerprint: `AAAA BBBB CCCC DDDD EEEE FFFF 1111 2222 3333 4444`)
+
+> If your report includes sensitive information (exploits, credentials, customer data), use the private GitHub advisory flow or encrypt your email with our PGP key.
+
+### What to include
+Please provide as much detail as possible to help us triage quickly:
+- A clear description of the issue and **impact**.
+- **Affected project/repository**, version(s), and environment.
+- **Proof of concept** (PoC) or reproducible steps.
+- Any relevant logs, stack traces, or screenshots.
+- Suggested remediation, if known.
+
+---
+
+## Our Process & Timelines
+
+We follow these target service levels for valid reports:
+
+1. **Triage acknowledgment:** within **2 business days**.  
+2. **Initial assessment:** within **5 business days** (severity, scope, affected components).  
+3. **Remediation plan:** shared within **10 business days** for High/Critical issues; within **20 business days** for Medium/Low.  
+4. **Fix & release:**  
+   - Critical/High: prioritized for the next patch release or hotfix.  
+   - Medium/Low: batched into the next scheduled release.  
+5. **Advisory publication:** we will publish a GitHub Security Advisory with CVE (when applicable) and upgrade/workaround guidance.
+
+You will receive **weekly status updates** for open, confirmed issues until resolution. If a report is declined, we will explain the reasoning.
+
+---
+
+## Disclosure Policy
+
+- We practice **coordinated disclosure**. We ask researchers to withhold public disclosure until a fix is available and users have had reasonable time to update.  
+- If exploitation is detected in the wild, we may accelerate disclosure and release temporary mitigations.  
+- We attribute credit to reporters who wish to be acknowledged in the advisory. If you prefer anonymity, tell us.
+
+---
+
+## Scope
+
+**In scope**
+- All actively maintained repositories under the **Telstra‑tsla** GitHub organization.
+- Packages, images, and artifacts we publish from those repositories.
+
+**Out of scope**
+- Social engineering (phishing, vishing), physical security, or third‑party vendor platforms.
+- Denial‑of‑Service (DoS) or volumetric attacks, including rate‑limit or resource exhaustion findings without demonstrable security impact.
+- Automated scans reporting only low‑risk issues without proof of exploitability (e.g., missing security headers on non‑production demo environments).
+- Vulnerabilities requiring a rooted/jailbroken device or non‑default, unsupported configurations.
+
+If you’re unsure whether something is in scope, submit it; we’ll guide you.
+
+---
+
+## Severity & CVE
+
+- We assess severity using **CVSS v3.1** and business impact.  
+- For confirmed vulnerabilities affecting supported versions, we will request a **CVE ID** and publish a GitHub Security Advisory with remediation steps and fixed versions.
+
+---
+
+## Fix Distribution & Backports
+
+- Security fixes are released as patch/minor versions on supported branches.  
+- We backport fixes to all **Supported** lines in the table above when technically feasible and safe.  
+- We do not patch EOL versions; upgrade guidance will be provided.
+
+---
+
+## Temporary Mitigations
+
+When a complete fix is not immediately available, we may provide mitigations or configuration workarounds. These will be documented in the advisory and release notes.
+
+---
+
+## Safe Harbor
+
+We will not initiate legal action against researchers who:
+- Make a good‑faith effort to follow this policy,
+- Avoid privacy violations, service disruption, and data destruction,
+- Only access or expose data to the extent necessary to demonstrate the vulnerability,
+- Give us reasonable time to remediate before any public disclosure.
+
+If in doubt, contact us first.
+
+---
+
+## Bug Bounty
+
+We do **not** currently offer monetary bounties. We recognize researchers in advisories (with consent) and may offer swag or thanks at our discretion.
+
+---
+
+## Contact & Updates
+
+- Security contact: `security@telstra-tsla.example`  
+- General contact: `oss@telstra-tsla.example`  
+- Advisories & updates are posted in the **Security Advisories** section of each affected repository.
+
+_Thank you for helping keep the Telstra‑tsla ecosystem safe for everyone._
+
+Need edits (e.g., real email, PGP key, repo names)? Tell me the exact addresses and I’ll swap them in and tune the response timelines to your preference.
+
