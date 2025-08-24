@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Telstra Inc — Electric Vehicles, Energy & Services</title>
+  <meta name="description" content="Telstra Inc — Electric vehicles, clean energy, charging, and professional services. Pricing with multi-currency toggle and finance/lease calculators." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Telstra Inc Home">
+        <svg class="logo" viewBox="0 0 180 36" aria-hidden="true">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00d1ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+          <text x="0" y="26" font-size="26" font-family="Inter, system-ui" fill="url(#g)" letter-spacing="1.2">TELSTRA</text>
+        </svg>
+        <span class="brand-sub">Inc</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul id="nav-menu" class="nav-list">
+          <!-- Vehicles -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Vehicles</button>
+            <div class="mega" role="menu" aria-label="Vehicles">
+              <div class="mega-col">
+                <h4>Sedans</h4>
+                <a href="#vehicles" data-model="Model S">Model S</a>
+                <a href="#vehicles" data-model="Model 3">Model 3</a>
+              </div>
+              <div class="mega-col">
+                <h4>SUVs</h4>
+                <a href="#vehicles" data-model="Model Y">Model Y</a>
+                <a href="#vehicles" data-model="Model X">Model X</a>
+              </div>
+              <div class="mega-col">
+                <h4>Trucks & Sports</h4>
+                <a href="#vehicles" data-model="Cybertruck">Cybertruck</a>
+                <a href="#vehicles" data-model="Roadster">Roadster</a>
+              </div>
+              <div class="mega-col">
+                <h4>Compare</h4>
+                <a href="#compare">Compare All Models</a>
+                <a class="pill" href="#inventory">Inventory</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Energy -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Energy</button>
+            <div class="mega" role="menu" aria-label="Energy">
+              <div class="mega-col">
+                <h4>Solar</h4>
+                <a href="#energy">Solar Panels</a>
+                <a href="#energy">Solar Roof</a>
+              </div>
+              <div class="mega-col">
+                <h4>Storage</h4>
+                <a href="#energy">Powerwall</a>
+              </div>
+              <div class="mega-col">
+                <h4>Commercial & Utility</h4>
+                <a href="#energy">Megapack</a>
+                <a href="#energy">Energy for Business</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Charging -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Charging</button>
+            <div class="mega" role="menu" aria-label="Charging">
+              <div class="mega-col"><h4>Home Charging</h4><a href="#charging">Wall Connector</a><a href="#charging">Mobile Connector</a></div>
+              <div class="mega-col"><h4>Supercharging</h4><a href="#charging">Supercharger Network</a><a href="#charging">Destination Charging</a></div>
+              <div class="mega-col"><h4>Find a Charger</h4><a href="#find">Trip Planner</a><a href="#support">Charging Support</a></div>
+            </div>
+          </li>
+
+          <!-- Shop -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Shop</button>
+            <div class="mega" role="menu" aria-label="Shop">
+              <div class="mega-col"><h4>Vehicle Accessories</h4><a href="#shop">Floor Mats</a><a href="#shop">Wheels & Tires</a></div>
+              <div class="mega-col"><h4>Charging</h4><a href="#shop">Home Chargers</a><a href="#shop">Adapters</a></div>
+              <div class="mega-col"><h4>Lifestyle</h4><a href="#shop">Apparel</a><a href="#shop">Lifestyle Products</a></div>
+            </div>
+          </li>
+
+          <!-- Discover -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Discover</button>
+            <div class="mega" role="menu" aria-label="Discover">
+              <div class="mega-col"><h4>Ownership</h4><a href="#discover">Trade‑In</a><a href="#discover">Insurance</a><a href="#discover">Careers</a></div>
+              <div class="mega-col"><h4>Business</h4><a href="#discover">Fleet</a><a href="#discover">Leasing</a><a href="#discover">Events</a></div>
+              <div class="mega-col"><h4>Corporate</h4><a href="#investors">Investor Relations</a><a href="#impact">Impact</a><a href="#newsroom">Newsroom</a></div>
+            </div>
+          </li>
+
+          <!-- Support -->
+          <li class="has-mega">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false">Support</button>
+            <div class="mega" role="menu" aria-label="Support">
+              <div class="mega-col"><h4>Help Topics</h4><a href="#support">Order Support</a><a href="#support">Roadside Assistance</a><a href="#support">Service & Repair</a></div>
+              <div class="mega-col"><h4>Resources</h4><a href="#support">Account Management</a><a href="#find">Find Us</a><a href="#support">Manuals & Guides</a></div>
+            </div>
+          </li>
+
+          <li><a class="nav-link" href="#account">Account</a></li>
+
+          <li class="toolbar">
+            <div class="currency-switch" id="currencySwitch" role="group" aria-label="Currency">
+              <button data-cur="USD" class="active" aria-pressed="true">USD</button>
+              <button data-cur="EUR">EUR</button>
+              <button data-cur="GBP">GBP</button>
+              <button data-cur="AUD">AUD</button>
+              <button data-cur="NGN">NGN</button>
+              <button data-cur="INR">INR</button>
+            </div>
+            <button class="btn-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title">Move the future.</h1>
+        <p class="lede">Electric vehicles, clean energy, and the network to power both.</p>
+        <div class="hero-cta">
+          <a href="#vehicles" class="btn btn--primary">Order a Vehicle</a>
+          <a href="#energy" class="btn btn--ghost">Explore Energy</a>
+        </div>
+
+        <ul class="hero-stats" aria-label="Studio highlights">
+          <li><strong class="counter" data-count-to="1200">0</strong><span>Supercharger locations</span></li>
+          <li><strong class="counter" data-count-to="650000">0</strong><span>EVs on the road</span></li>
+          <li><strong class="counter" data-count-to="4">0</strong><span>Continents covered</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VEHICLES -->
+    <section id="vehicles" class="section">
+      <div class="container">
+        <header class="section-head"><h2>Vehicles — Pricing & Specs</h2><p>Estimated specs and pricing. Final pricing shown at checkout.</p></header>
+
+        <!-- Pricing table -->
+        <div class="table-wrap">
+          <table class="table" aria-describedby="vehicles">
+            <thead>
+              <tr><th scope="col">Model</th><th scope="col">Variant</th><th scope="col">Range</th><th scope="col">0–60 mph</th><th scope="col">Top Speed</th><th scope="col">Seats</th><th scope="col">Base Price</th><th scope="col">Finance from / mo</th><th></th></tr>
+            </thead>
+            <tbody id="vehicleTable">
+              <!-- data-price-usd attributes used for conversion -->
+              <tr>
+                <td>Model 3</td><td>RWD</td><td>272 mi</td><td>5.8 s</td><td>140 mph</td><td>5</td>
+                <td class="price" data-price-usd="38990"></td>
+                <td class="price" data-price-usd="399"></td>
+                <td><a class="btn btn--sm btn--primary" href="#order">Order</a></td>
+              </tr>
+              <tr>
+                <td>Model 3</td><td>Long Range</td><td>341 mi</td><td>4.2 s</td><td>145 mph</td><td>5</td>
+                <td class="price" data-price-usd="45990"></td>
+                <td class="price" data-price-usd="499"></td>
+                <td><a class="btn btn--sm btn--primary" href="#order">Order</a></td>
+              </tr>
+              <tr>
+                <td>Model S</td><td>Long Range</td><td>405 mi</td><td>3.1 s</td><td>155 mph</td><td>5</td>
+                <td class="price" data-price-usd="89990"></td>
+                <td class="price" data-price-usd="799"></td>
+                <td><a class="btn btn--sm btn--primary" href="#order">Order</a></td>
+              </tr>
+              <tr>
+                <td>Cybertruck</td><td>AWD</td><td>340 mi</td><td>4.1 s</td><td>112 mph</td><td>5</td>
+                <td class="price" data-price-usd="79990"></td>
+                <td class="price" data-price-usd="749"></td>
+                <td><a class="btn btn--sm btn--primary" href="#order">Order</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Finance & Lease panel -->
+        <div class="panel finance-panel" aria-labelledby="finance-title">
+          <h3 id="finance-title">Finance & Lease Calculator</h3>
+          <div class="calc-grid">
+            <form id="calcForm" class="form-grid" aria-label="Finance and lease calculator">
+              <fieldset>
+                <legend>Vehicle</legend>
+                <label>Vehicle
+                  <select id="calc-vehicle">
+                    <option value="38990">Model 3 RWD — $38,990</option>
+                    <option value="45990">Model 3 LR — $45,990</option>
+                    <option value="89990">Model S LR — $89,990</option>
+                    <option value="79990">Cybertruck AWD — $79,990</option>
+                  </select>
+                </label>
+                <label>Sticker / MSRP
+                  <input id="calc-msrp" type="number" step="1" min="0" value="38990" />
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Finance</legend>
+                <label>Down Payment <input id="calc-down" type="number" min="0" step="100" value="5000" /></label>
+                <label>Trade‑in Value <input id="calc-trade" type="number" min="0" step="100" value="0" /></label>
+                <label>Term (months) <input id="calc-term" type="number" min="12" max="84" step="12" value="72" /></label>
+                <label>APR (%) <input id="calc-apr" type="number" min="0" step="0.01" value="4.5" /></label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Lease</legend>
+                <label>Residual (%) <input id="lease-res" type="number" min="0" max="100" step="0.1" value="58" /></label>
+                <label>Money Factor (e.g., 0.002) <input id="lease-mf" type="number" step="0.0001" min="0" value="0.0025" /></label>
+                <label>Lease Term (months) <input id="lease-term" type="number" min="12" step="12" value="36" /></label>
+                <label>Upfront Drive‑off <input id="lease-driveoff" type="number" min="0" step="50" value="1500" /></label>
+              </fieldset>
+
+              <div class="calc-actions">
+                <button class="btn btn--primary" id="calc-run" type="button">Calculate</button>
+                <button class="btn" id="calc-reset" type="button">Reset</button>
+              </div>
+            </form>
+
+            <div class="calc-results panel" aria-live="polite">
+              <h4>Results</h4>
+              <dl>
+                <div><dt>Loan Amount</dt><dd id="res-loan">—</dd></div>
+                <div><dt>Estimated Monthly Payment (Finance)</dt><dd id="res-fin">—</dd></div>
+                <div><dt>Total Cost over Term</dt><dd id="res-total">—</dd></div>
+                <hr/>
+                <div><dt>Lease Monthly Payment</dt><dd id="res-lease">—</dd></div>
+                <div><dt>Due at Signing (est.)</dt><dd id="res-driveoff">—</dd></div>
+                <div><dt>Residual Value (est.)</dt><dd id="res-residual">—</dd></div>
+              </dl>
+              <small class="muted">Estimates only. Taxes, registration, fees, incentives, and dealer offers not included.</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ENERGY -->
+    <section id="energy" class="section section--alt">
+      <div class="container">
+        <header class="section-head"><h2>Energy — Solar & Storage</h2><p>Home backup, grid independence, and utility‑scale storage.</p></header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Product</th><th>Specs</th><th>Warranty</th><th>Base Price</th><th>Install Est.</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Powerwall 3</td><td>13.5 kWh storage</td><td>10 yrs</td><td class="price" data-price-usd="7500"></td><td class="price" data-price-usd="9200"></td><td><a class="btn btn--sm btn--primary" href="#quote">Get a Quote</a></td></tr>
+              <tr><td>Solar Panels (est)</td><td>425 W modules</td><td>25 yrs</td><td class="unit">from <span class="price" data-price-usd="2.2" data-unit="per-watt"></span> / W</td><td class="price" data-price-usd="12000"></td><td><a class="btn btn--sm btn--primary" href="#quote">Get a Quote</a></td></tr>
+              <tr><td>Solar Roof</td><td>Glass tiles</td><td>25 yrs</td><td class="unit"><span class="price" data-price-usd="21" data-unit="per-sqft"></span> / sq ft</td><td class="price" data-price-usd="55000"></td><td><a class="btn btn--sm btn--primary" href="#quote">Get a Quote</a></td></tr>
+              <tr><td>Megapack</td><td>Utility‑scale</td><td>20 yrs</td><td class="price" data-price-usd="2000000"></td><td class="price" data-price-usd="250000"></td><td><a class="btn btn--sm" href="#sales">Contact Sales</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="disclaimer">Prices are estimates and subject to change; conversions are approximate.</p>
+      </div>
+    </section>
+
+    <!-- CHARGING -->
+    <section id="charging" class="section">
+      <div class="container">
+        <header class="section-head"><h2>Charging — Hardware & Network</h2><p>Charge at home or on the road with our network and connectors.</p></header>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Product</th><th>Compatibility</th><th>Price</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Wall Connector</td><td>All models</td><td class="price" data-price-usd="500"></td><td><a class="btn btn--sm btn--primary" href="#shop">Buy</a></td></tr>
+              <tr><td>Mobile Connector</td><td>All models</td><td class="price" data-price-usd="230"></td><td><a class="btn btn--sm btn--primary" href="#shop">Buy</a></td></tr>
+              <tr><td>CCS Adapter</td><td>S/3/X/Y</td><td class="price" data-price-usd="175"></td><td><a class="btn btn--sm btn--primary" href="#shop">Buy</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h3>Trip Planner (demo)</h3>
+          <form id="tripForm" class="trip-grid" aria-label="Trip planner demo">
+            <label>Start <input id="trip-start" placeholder="e.g., San Francisco, CA" /></label>
+            <label>Destination <input id="trip-end" placeholder="e.g., Los Angeles, CA" /></label>
+            <label>Vehicle
+              <select id="trip-vehicle">
+                <option data-range="272">Model 3 RWD (272 mi)</option>
+                <option data-range="341">Model 3 LR (341 mi)</option>
+                <option data-range="310">Model Y LR (310 mi)</option>
+              </select>
+            </label>
+            <button class="btn btn--primary" type="submit">Plan</button>
+          </form>
+          <div id="tripResult" class="muted" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <header class="section-head"><h2>Professional Services</h2><p>Investment, Asset Recovery, Wire Transfer, Smart Capsule, Grants — pricing with currency toggle.</p></header>
+
+        <div class="grid services">
+          <!-- Investment -->
+          <article class="service panel">
+            <h3>Investment Service</h3>
+            <table class="table table--tight">
+              <thead><tr><th>Tier</th><th>Features</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Basic</td><td>Screening, quarterly report</td><td class="price" data-price-usd="99" data-billing="/mo"></td></tr>
+                <tr><td>Professional</td><td>Advisory + risk</td><td class="price" data-price-usd="399" data-billing="/mo"></td></tr>
+                <tr><td>Enterprise</td><td>Custom</td><td>Custom</td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--sm btn--primary" href="#consult">Book a Consultation</a>
+            <p class="disclaimer">Not investment advice; standard disclaimers apply.</p>
+          </article>
+
+          <!-- AI Recovery -->
+          <article class="service panel">
+            <h3>AI Clone Asset Recovery</h3>
+            <table class="table table--tight">
+              <thead><tr><th>Package</th><th>Features</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Basic</td><td>Digital trace report</td><td class="price" data-price-usd="499"></td></tr>
+                <tr><td>Advanced</td><td>Trace + affidavit</td><td class="price" data-price-usd="1200"></td></tr>
+                <tr><td>Enterprise</td><td>Full coordination</td><td>Custom</td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--sm btn--primary" href="#assessment">Request Assessment</a>
+          </article>
+
+          <!-- Wire Transfer -->
+          <article class="service panel">
+            <h3>Wire Transfer Service</h3>
+            <table class="table table--tight">
+              <thead><tr><th>Item</th><th>Details</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Domestic Wire</td><td>Same‑day cutoff</td><td class="price" data-price-usd="20"></td></tr>
+                <tr><td>International Wire</td><td>Multi‑currency</td><td class="price" data-price-usd="40"></td></tr>
+                <tr><td>Compliance Review</td><td>KYC/AML checks</td><td class="price" data-price-usd="15"></td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--sm btn--primary" href="#transfer">Initiate Transfer</a>
+            <p class="disclaimer">Services performed via licensed partners where required.</p>
+          </article>
+
+          <!-- Capsule -->
+          <article class="service panel">
+            <h3>Smart Capsule Moveable House</h3>
+            <table class="table table--tight">
+              <thead><tr><th>Config</th><th>Specs</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Studio</td><td>1 bed, Solar + Storage</td><td class="price" data-price-usd="55000"></td></tr>
+                <tr><td>Family</td><td>2 beds, Solar + Storage</td><td class="price" data-price-usd="85000"></td></tr>
+                <tr><td>Enterprise</td><td>Custom</td><td>Custom</td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--sm btn--primary" href="#design">Design Your Capsule</a>
+          </article>
+
+          <!-- Grants -->
+          <article class="service panel">
+            <h3>Grant Services</h3>
+            <table class="table table--tight">
+              <thead><tr><th>Package</th><th>Includes</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Eligibility Check</td><td>1‑hour consult</td><td class="price" data-price-usd="199"></td></tr>
+                <tr><td>Research + Writing</td><td>Draft + submission</td><td class="price" data-price-usd="2500"></td></tr>
+                <tr><td>Retainer</td><td>Quarterly pipeline</td><td class="price" data-price-usd="1500" data-billing="/qtr"></td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--sm btn--primary" href="#eligibility">Check Eligibility</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT -->
+    <section id="support" class="section">
+      <div class="container">
+        <header class="section-head"><h2>Support</h2><p>Help topics, manuals, and contact.</p></header>
+
+        <div class="grid support-grid">
+          <form id="contactForm" class="contact-form panel" novalidate>
+            <h3>Contact Us</h3>
+            <label>Name <input id="c-name" required placeholder="Ada Lovelace" /></label>
+            <label>Email <input id="c-email" type="email" required placeholder="ada@example.com" /></label>
+            <label>Topic
+              <select id="c-topic" required>
+                <option value="">Choose…</option><option>Order Support</option><option>Account Management</option><option>Service & Repair</option><option>Charging Support</option>
+              </select>
+            </label>
+            <label>Message <textarea id="c-msg" rows="5" minlength="20" required></textarea></label>
+            <button class="btn btn--primary" type="submit">Send</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="panel">
+            <h3>Manuals & Guides</h3>
+            <ul class="list">
+              <li><a href="#">Model 3 Owner’s Manual (PDF)</a></li>
+              <li><a href="#">Wall Connector Install Guide (PDF)</a></li>
+              <li><a href="#">Powerwall User Guide (PDF)</a></li>
+            </ul>
+            <h3>Find Us</h3>
+            <p class="muted">Service centers and charging locations map — integration placeholder.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Telstra Inc</strong><p class="muted">Electric mobility, energy systems, and services for a decarbonized future.</p></div>
+      <nav aria-label="Footer">
+        <ul class="footer-links"><li><a href="#vehicles">Vehicles</a></li><li><a href="#energy">Energy</a></li><li><a href="#charging">Charging</a></li><li><a href="#shop">Shop</a></li></ul>
+      </nav>
+      <nav aria-label="More">
+        <ul class="footer-links"><li><a href="#discover">Discover</a></li><li><a href="#support">Support</a></li><li><a href="#account">Account</a></li></ul>
+      </nav>
+      <form id="newsletter" class="newsletter" novalidate>
+        <label for="news-email" class="sr-only">Email</label>
+        <input id="news-email" type="email" placeholder="Your email" required />
+        <button class="btn btn--sm" type="submit">Subscribe</button>
+        <small class="error" aria-live="polite"></small>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <p class="legal">© <span id="year"></span> Telstra Inc. Prices shown are estimates. Conversions are approximate.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+                  </html>
